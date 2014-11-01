@@ -31,3 +31,8 @@ git clone git@github.com:trulia/thoth-demo.git
 http://localhost:8983/solr/collection1/select?q=*%3A*&wt=json&indent=true
 ```
 - Trigger a shrinking event
+
+
+License
+=============
+Copyright (c) 2014 Trulia, Inc. See the LICENSE file for license rights and limitations.
