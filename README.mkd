@@ -1,15 +1,26 @@
 Thoth demo 
 ======================
 
+Get started
+------------------------
 - Clone the demo project 
 ```
 git clone git@github.com:trulia/thoth-demo.git
 ```
+
+Start the demos
+------------------------
+This example contains a demo version of 
+- ActiveMQ broker
+- A simple solr instance that we will use to intercept queries from
+- A thoth index
+- Thoth
+
+Start the demos separately or use the example start script
 - Execute example.sh . 
     ```
     ./example.sh
     ``` 
-    *This will start an demo version of activemq broker, a demo solr instance from where we will intercept requests, a demo thoth index, a demo version of thoth*
 
     [Access to activemq webUI](http://localhost:8161/admin/queues.jsp) will be on default port 8161
     
@@ -17,19 +28,25 @@ git clone git@github.com:trulia/thoth-demo.git
     
     [Access to demo thoth index](http://localhost:8983/solr/#/) will be on port 8983
 
-    Thoth demo will be running on port 8081
+    Thoth will be running on port 8081
     
-- Execute some solr queries from the example solr instance 
+Demo of the functionality
+---------------------------
+- Let's execute some queries and simulate some exceptions from the [intercepted instance](http://localhost:8900/solr/#/)
+
 	```
 	# Standard query *:*
-	http://localhost:8900/solr/collection1/select?q=*%3A*&wt=json&indent=true
+	curl http://localhost:8900/solr/collection1/select?q=*%3A*&wt=json&indent=true
+
 	# Query that will generate exception
-	http://localhost:8900/solr/collection1/select?q=THIS_FIELD:DOES_NOT_EXIST&wt=json&indent=true
+	curl http://localhost:8900/solr/collection1/select?q=THIS_FIELD:DOES_NOT_EXIST&wt=json&indent=true
 	```
-- Verify that those requests got intercepted and indexed on the Thoth index
+- Those requests have been intercepted and indexed by Thoth inside the [Thoth index](http://localhost:8983/solr/#/) . Let's verify this: 
+
 ```
 http://localhost:8983/solr/collection1/select?q=*%3A*&wt=json&indent=true
 ```
+
 - Trigger a shrinking event
 
 
