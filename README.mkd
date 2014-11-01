@@ -1,5 +1,6 @@
 Thoth demo 
 ======================
+![Image](powered-trulia.png?raw=true)
 
 Get started
 ------------------------
