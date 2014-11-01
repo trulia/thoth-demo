@@ -6,7 +6,7 @@ Get started
 ------------------------
 - Clone the demo project 
 ```
-git clone git@github.com:trulia/thoth-demo.git
+git clone https://github.com/trulia/thoth-demo.git
 ```
 
 Start the demos
