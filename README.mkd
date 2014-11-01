@@ -36,10 +36,10 @@ Demo of the functionality
 
 	```
 	# Standard query *:*
-	curl http://localhost:8900/solr/collection1/select?q=*%3A*&wt=json&indent=true
+	curl 'http://localhost:8900/solr/collection1/select?q=*%3A*&wt=json&indent=true'
 
 	# Query that will generate exception
-	curl http://localhost:8900/solr/collection1/select?q=THIS_FIELD:DOES_NOT_EXIST&wt=json&indent=true
+	curl 'http://localhost:8900/solr/collection1/select?q=THIS_FIELD:DOES_NOT_EXIST&wt=json&indent=true'
 	```
 - Those requests have been intercepted and indexed by Thoth inside the [Thoth index](http://localhost:8983/solr/#/) . Let's verify this: 
 
