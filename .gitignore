@@ -1,0 +1,5 @@
+activemq/data/
+activemq/tmp/
+*/logs
+*nohup.out
+*/*/*/data/
