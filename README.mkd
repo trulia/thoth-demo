@@ -1,6 +1,6 @@
 Thoth demo 
 ======================
-![Image](powered-trulia.png?raw=true)
+
 
 Get started
 ------------------------
@@ -54,3 +54,5 @@ http://localhost:8983/solr/collection1/select?q=*%3A*&wt=json&indent=true
 License
 =============
 Copyright (c) 2014 Trulia, Inc. See the LICENSE file for license rights and limitations.
+
+Powered by ![Image](powered-trulia.png?raw=true)
