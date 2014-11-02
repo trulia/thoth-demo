@@ -1,4 +1,4 @@
-<img align="left" src="thoth.png?raw=true">  &nbsp;&nbsp;&nbsp;&nbsp; Thoth demo 
+<img align="left" src="thoth.png?raw=true">  &nbsp;&nbsp; Thoth demo 
 ======================
 <br><br>
 
