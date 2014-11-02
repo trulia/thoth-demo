@@ -1,4 +1,4 @@
-Thoth demo 
+<img align="left" src="thoth.png?raw=true"> Thoth demo 
 ======================
 
 
