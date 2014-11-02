@@ -1,6 +1,6 @@
 <img align="left" src="thoth.png?raw=true"> Thoth demo 
 ======================
-
+<br><br>
 
 Get started
 ------------------------
