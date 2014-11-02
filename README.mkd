@@ -55,4 +55,4 @@ License
 =============
 Copyright (c) 2014 Trulia, Inc. See the LICENSE file for license rights and limitations.
 
-<p align="right">Powered by</p> <img align="right" src="powered-trulia.png?raw=true">
+<p align="left">Powered by</p><img align="left" src="powered-trulia.png?raw=true">
