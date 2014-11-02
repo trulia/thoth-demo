@@ -23,7 +23,7 @@ Start the demos separately or use the example start script
     ./example.sh
     ``` 
 
-    [Access to activemq webUI](http://localhost:8161/admin/queues.jsp) will be on default port 8161
+    [Access to activemq webUI](http://localhost:8161/admin/queues.jsp) will be on default port 8161 , if user and password requested use user:admin , password:admin
     
     [Access to demo solr instance ](http://localhost:8900/solr/#/) will be on port 8900
     
