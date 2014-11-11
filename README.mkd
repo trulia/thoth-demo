@@ -55,7 +55,7 @@ Stop the Demos
 The stop_demo.sh script kills the above started process based on the default port number's.
 
 Stop the demos separately or use the example stop script. (Make sure you have execute permission's)
-- Execute start_demo.sh .
+- Execute stop_demo.sh .
     ```
     ./stop_demo.sh
     ```
