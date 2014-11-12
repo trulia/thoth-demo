@@ -1,36 +1,36 @@
-<img align="left" src="thoth.png?raw=true">  &nbsp;&nbsp; Thoth demo 
+<img align="left" src="thoth.png?raw=true">  &nbsp;&nbsp; Thoth demo
 ======================
 <br><br>
 
 Get started
 ------------------------
-- Clone the demo project 
+- Clone the demo project
 ```
 git clone https://github.com/trulia/thoth-demo.git
 ```
 
 Start the demos
 ------------------------
-This example contains a demo version of 
+This example contains a demo version of
 - ActiveMQ broker
 - A simple solr instance that we will use to intercept queries from
 - A thoth index
 - Thoth
 
 Start the demos separately or use the example start script
-- Execute example.sh . 
+- Execute start_demo.sh .
     ```
-    ./example.sh
-    ``` 
+    ./start_demo.sh
+    ```
 
     [Access to activemq webUI](http://localhost:8161/admin/queues.jsp) will be on default port 8161 , if user and password requested use user:admin , password:admin
-    
+
     [Access to demo solr instance ](http://localhost:8900/solr/#/) will be on port 8900
-    
+
     [Access to demo thoth index](http://localhost:8983/solr/#/) will be on port 8983
 
     Thoth will be running on port 8081
-    
+
 Demo of the functionality
 ---------------------------
 - Let's execute some queries and simulate some exceptions from the [intercepted instance](http://localhost:8900/solr/#/)
@@ -42,7 +42,7 @@ Demo of the functionality
 	# Query that will generate exception
 	curl 'http://localhost:8900/solr/collection1/select?q=THIS_FIELD:DOES_NOT_EXIST&wt=json&indent=true'
 	```
-- Those requests have been intercepted and indexed by Thoth inside the [Thoth index](http://localhost:8983/solr/#/) . Let's verify this: 
+- Those requests have been intercepted and indexed by Thoth inside the [Thoth index](http://localhost:8983/solr/#/) . Let's verify this:
 
 ```
 http://localhost:8983/solr/collection1/select?q=*%3A*&wt=json&indent=true
@@ -50,6 +50,15 @@ http://localhost:8983/solr/collection1/select?q=*%3A*&wt=json&indent=true
 
 - Trigger a shrinking event
 
+Stop the Demos
+-------------------
+The stop_demo.sh script kills the above started process based on the default port number's.
+
+Stop the demos separately or use the example stop script. (Make sure you have execute permission's)
+- Execute stop_demo.sh .
+    ```
+    ./stop_demo.sh
+    ```
 
 License
 =============
