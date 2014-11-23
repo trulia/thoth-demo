@@ -20,7 +20,7 @@ This example contains a demo version of
 Start the demos separately or use the example start script
 - Execute start_demo.sh .
     ```
-    ./start_demo.sh
+    ./scripts/start_demo.sh
     ```
 
     [Access to activemq webUI](http://localhost:8161/admin/queues.jsp) will be on default port 8161 , if user and password requested use user:admin , password:admin
@@ -73,7 +73,7 @@ The stop_demo.sh script kills the above started process based on the default por
 Stop the demos separately or use the example stop script. (Make sure you have execute permission's)
 - Execute stop_demo.sh .
     ```
-    ./stop_demo.sh
+    ./scripts/stop_demo.sh
     ```
 
 License
