@@ -13,6 +13,8 @@ THOTH_PORT=8081
 THOTH_DASHBOARD=8000
 #Demo api Instance
 THOTH_API=3001
+#Demo Monitor Instance
+THOTH_MONITOR=8082
 
 
 lsof -i tcp:${ACTIVEMQ_PORT} | awk 'NR!=1 {print $2}' | xargs kill 
@@ -21,3 +23,4 @@ lsof -i tcp:${THOTH_INDEX_PORT} | awk 'NR!=1 {print $2}' | xargs kill
 lsof -i tcp:${THOTH_PORT} | awk 'NR!=1 {print $2}' | xargs kill
 lsof -i tcp:${THOTH_DASHBOARD} | awk 'NR!=1 {print $2}' | xargs kill
 lsof -i tcp:${THOTH_API} | awk 'NR!=1 {print $2}' | xargs kill
+lsof -i tcp:${THOTH_MONITOR} | awk 'NR!=1 {print $2}' | xargs kill
