@@ -1,5 +1,5 @@
 #!/bin/bash
-base_dir=`pwd`
+base_dir=`pwd`/..
 # Start activeMQ first
 echo "Starting activemq ... "
 ${base_dir}/activemq/bin/activemq start
