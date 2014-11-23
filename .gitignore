@@ -5,3 +5,5 @@ activemq/tmp/
 */*/*/data/
 */*/webapp/
 .idea
+send-alert-rate/
+send-normal-rate/
