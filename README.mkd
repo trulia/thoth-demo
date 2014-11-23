@@ -48,7 +48,23 @@ Demo of the functionality
 http://localhost:8983/solr/collection1/select?q=*%3A*&wt=json&indent=true
 ```
 
-- Trigger a shrinking event
+- After a minute the documents will be automatically shrinked and a summary shrank document will be added to the shrank core.
+You can change the shrinking configuration inside 
+``thoth/resources/application.properties``
+
+Here's a snippet 
+
+```
+# Enable/Disable shrinking feature
+thoth.shrinker.enabled=true
+
+# Schedule when do you want the shrinker feature to be triggered
+# 0 * * * * ? --> Every minute
+thoth.shrinker.schedule=0 * * * * ?
+# 'how long back' you want to shrink docs in seconds
+thoth.shrinker.period= 900
+thoth.shrinker.threadPoolSize = 1
+```
 
 Stop the Demos
 -------------------
